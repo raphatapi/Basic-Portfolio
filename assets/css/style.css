@@ -1,10 +1,9 @@
 html, body {
   height: 100%;
+  margin: 0 auto;
 }
 
 body {
-  position: relative;
-	margin: 0 auto;
   background-image: url("../images/vintage-concrete.png");
 }
 
@@ -31,8 +30,15 @@ header {
 }
 
 header a,header div {
-    display:inline-block;
-    vertical-align:middle;
+  display:inline-block;
+  vertical-align:middle;
+ }
+
+ .main-wrap {
+  margin-bottom: 2em;
+  min-height: 100%;
+  overflow: auto;
+  padding: 0;
  }
 
 #logo {
@@ -40,79 +46,9 @@ header a,header div {
 	color: white;
   text-decoration: none;
 	width: 250px;
-	height: 60px;
-  padding: 8px;
+	height: 70px;
+  padding: 3px 8px;
   text-align: center;
-}
-
-#main_content {
-  clear: both;
-  float: left;
-  background-color: #ffffff;
-  width: 610px;
-  padding: 5px 20px;
-  margin: 40px 0 40px 110px;
-}
-
-.main_title {
-  border-bottom: solid 2px #cccccc;
-}
-
-#about_content img {
-  float: left;
-  padding-right: 10px;
-}
-
-#about_picture {
-  width: 200px;
-  height: 250px;
-}
-
-.connect {
-  float: left;
-  background-color: #ffffff;
-  padding: 5px 20px;
-  width: 230px;
-  margin: 40px 0 40px 40px;
-}
-
-.connect_title {
-  border-bottom: solid 2px #cccccc;
-}
-
-.social {
-  padding: 15px 5px;
-}
-
-.social_icon {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-
-footer {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #666666;
-  transition:.33s linear;
-}
-
-#footer {
-  border-top: solid 5px #4aaaa5;
-  color: #cccccc;
-  text-align: center;
-  font-size: 10px;
-  padding: 15px;
-}
-
-/* Change the color of background on hover */
-footer:hover {
-  background: black;
 }
 
 /*Create navogation bar*/
@@ -146,4 +82,74 @@ footer:hover {
 .topnav a.active {
     background-color: #4aaaa5;
     color: white;
+}
+
+#main_content {
+  clear: both;
+  float: left;
+  background-color: #ffffff;
+  width: 610px;
+  padding: 5px 20px;
+  margin: 40px 0 50px 110px;
+}
+
+.main_title {
+  border-bottom: solid 2px #cccccc;
+}
+
+#about_content img {
+  float: left;
+  padding-right: 10px;
+}
+
+#about_picture {
+  width: 200px;
+  height: 250px;
+}
+
+.connect {
+  float: left;
+  background-color: #ffffff;
+  padding: 5px 20px;
+  width: 230px;
+  margin: 40px 0 50px 40px;
+}
+
+.connect_title {
+  border-bottom: solid 2px #cccccc;
+}
+
+.social {
+  padding: 15px 5px;
+}
+
+.social_icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+footer {
+  clear: both;
+  height: 2em,
+  left: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #666666;
+  transition:.33s linear;
+}
+
+#footer {
+  border-top: solid 5px #4aaaa5;
+  color: #cccccc;
+  text-align: center;
+  font-size: small;
+  padding: 15px;
+}
+
+/* Change the color of background on hover */
+footer:hover {
+  background: black;
 }
