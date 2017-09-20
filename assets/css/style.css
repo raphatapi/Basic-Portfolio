@@ -1,4 +1,9 @@
+html, body {
+  height: 100%;
+}
+
 body {
+  position: relative;
 	margin: 0 auto;
   background-image: url("../images/vintage-concrete.png");
 }
@@ -46,7 +51,7 @@ header a,header div {
   background-color: #ffffff;
   width: 610px;
   padding: 5px 20px;
-  margin: 50px 0 40px 110px;
+  margin: 40px 0 40px 110px;
 }
 
 .main_title {
@@ -68,7 +73,7 @@ header a,header div {
   background-color: #ffffff;
   padding: 5px 20px;
   width: 230px;
-  margin: 50px 0 20px 40px;
+  margin: 40px 0 40px 40px;
 }
 
 .connect_title {
@@ -87,19 +92,30 @@ header a,header div {
 
 footer {
   clear: both;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: #666666;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  border-top: solid 5px #4aaaa5;
-  font-size: 10px;
+  transition:.33s linear;
 }
 
+#footer {
+  border-top: solid 5px #4aaaa5;
+  color: #cccccc;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+}
 
+/* Change the color of background on hover */
+footer:hover {
+  background: black;
+}
 
-
-
-/* Add a black background color to the top navigation*/
+/*Create navogation bar*/
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
@@ -117,16 +133,17 @@ footer {
     padding: 15px 20px;
     text-decoration: none;
     font-size: 17px;
+    transition:.33s linear;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #cccccc;
     color: black;
 }
 
 /* Add a color to the active/current link*/
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #4aaaa5;
     color: white;
 }
