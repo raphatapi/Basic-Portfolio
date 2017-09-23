@@ -37,7 +37,8 @@ header:after {
 
 .fixed-menu {
   position: fixed;
-  top: 0; 
+  top: 0;
+  bottom: 0; 
   width: 100%;
 }
 
@@ -52,10 +53,15 @@ header:after {
   text-align: center;
 }
 
+.logo:hover {
+  background-color: #43876e;
+  color: white;
+  transition:.33s linear;
+}
+
 /*Create navigation bar*/
 .topnav {
   background-color: #ffffff;
-  /*overflow: hidden;*/
   height: 45px;
   padding: 20px 170px 10px 0;
   border-bottom: solid 2px #cccccc;
@@ -188,14 +194,14 @@ without success! HELP!**/
   width: 100%;
 }
 
-.pics:hover {
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-}
-
 .pics {
   overflow: hidden;
   width: 100%;
+}
+
+.pics:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
 .tag {
