@@ -29,16 +29,9 @@ header {
   left: 110px;
 }
 
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .fixed-menu {
   position: fixed;
   top: 0;
-  bottom: 0; 
   width: 100%;
   z-index: 99;
 }
@@ -98,12 +91,11 @@ header:after {
   margin-top: 80px;
   margin-bottom: 2em;
   min-height: 100%;
-  overflow: auto;
   padding: 0;
  }
 
 .main_content {
-  /*clear: both;*/
+  clear: both;
   float: left;
   background-color: #ffffff;
   width: 610px;
