@@ -20,13 +20,19 @@ h2,h3 {
 
 p {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 header {
   float: left;
   position: absolute;
   left: 110px;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .fixed-menu {
@@ -46,10 +52,10 @@ header {
   text-align: center;
 }
 
-/*Create navogation bar*/
+/*Create navigation bar*/
 .topnav {
   background-color: #ffffff;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 45px;
   padding: 20px 170px 10px 0;
   border-bottom: solid 2px #cccccc;
@@ -58,27 +64,27 @@ header {
 
 /* Style the links inside the navigation bar*/
 .topnav a {
-    float: right;
-    display: block;
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    /*transition:.33s linear;*/
+  float: right;
+  display: block;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #cccccc;
-    color: black;
+  background-color: #6b674c;
+  color: white;
+  transition:.33s linear;
 }
 
 /* Add a color to the active/current link*/
 .topnav a.active {
-    background-color: #4aaaa5;
-    color: white;
+  background-color: #43876e;
+  color: white;
 }
 
 .main-wrap {
@@ -90,7 +96,7 @@ header {
  }
 
 .main_content {
-  clear: both;
+  /*clear: both;*/
   float: left;
   background-color: #ffffff;
   width: 610px;
@@ -146,45 +152,66 @@ footer {
 
 /* Change the color of background on hover */
 footer:hover {
-  background: black;
+  background: #6b674c;
 }
 
 .footer {
-  border-top: solid 5px #4aaaa5;
+  border-top: solid 5px #43876e;
   color: #cccccc;
   text-align: center;
   font-size: small;
   padding: 15px;
 }
 
-/*PORTFOLIO*/
-.gallery {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
+/*PORTFOLIO STARTS HERE*/
+
+/** ATENTION TAs! I'm having problems here.
+The gallery div is overflowing the navigation
+bar and I honestly spent tons of hours on this
+without success! HELP!**/
+
+.column {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
   column-count: 2;
-  column-gap: 10px;
-  margin-top: 20px;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  position: relative;
   float: left;
+  margin-top: 30px;
   width: 100%;
 }
 
-.gallery img {
+.pics:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.pics {
+  overflow: hidden;
   width: 100%;
-  height: auto;
 }
 
 .tag {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 96.4%;
   padding: 5px;
   text-align: center;
-  background-color: #4aaaa5;
+  background-color: #90daca;
   color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
-/* CONTACT */
-/* Style inputs with type="text", select elements and textareas */
-
+/* CONTACT STARTS HERE*/
 .container {
   padding: 20px 0;
 }
@@ -195,14 +222,14 @@ label {
 }
 
 input[type=text], textarea{
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input:focus, textarea:focus {
@@ -210,14 +237,14 @@ input:focus, textarea:focus {
 }
 
 input[type=submit] {
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #777777;
+  background-color: #777777;
 }
