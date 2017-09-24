@@ -164,11 +164,6 @@ footer:hover {
 
 /*PORTFOLIO STARTS HERE*/
 
-/** ATENTION TAs! I'm having problems here.
-The gallery div is overflowing the navigation
-bar and I honestly spent tons of hours on this
-without success! HELP!**/
-
 .column {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
