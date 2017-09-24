@@ -172,7 +172,7 @@ footer:hover {
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
 }
 
 .gallery {
@@ -203,6 +203,11 @@ footer:hover {
   color: white;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.tag a {
+  color: white;
+  text-decoration: none;
 }
 
 /* CONTACT STARTS HERE*/
